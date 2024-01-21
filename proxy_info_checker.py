@@ -1,6 +1,7 @@
 '''
 NOTE: This program checks proxies for connectivity and if connected, returns the 
 public ip information pertaining to its connection. Use case check for anonimity.
+
 format- <ip:port> <127.0.0.1:1234>
 '''
 import requests
@@ -28,7 +29,7 @@ def check(proxy):
     rand_header = BROWSER_HEADERS[random.randint(0, len(BROWSER_HEADERS)-1 )]
     proxies={'https': proxy}
     try:
-        content=requests.get('https://api.myip.com', proxies=proxies, header= rand_header, timeout= TIMEOUT, verify= True)
+        content=requests.get('https://api.myip.com', proxies=proxies, headers=rand_header, timeout= TIMEOUT, verify= True)
     except Exception as e:
         None
     else:
@@ -42,11 +43,12 @@ def check(proxy):
 def main():
     try:
         in_file=str(input("ENTER PROXY FILE NAME: "))
-        print(f'YOUR PUBLIC IP: {get_pub_ip()}')
-        with open(in_file, mode='r') as fhandle:
-            pThread().map(check,['http://'+ str(x).strip() for x in fhandle.read().split()]) 
     except Exception as e:
         print(f'{type(e).__name__} ERROR :: {e.args}')
+    print(f'YOUR PUBLIC IP: {get_pub_ip()}')
+    with open(in_file, mode='r') as fhandle:
+        prxs=fhandle.read().split()
+    pThread().map(check,['http://'+ str(x).strip() for x in prxs]) 
 
 if __name__=="__main__":
     main()
