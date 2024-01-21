@@ -46,7 +46,6 @@ def main():
         print(f'YOUR PUBLIC IP: {get_pub_ip()}')
         with open(in_file, mode='r') as fhandle:
             pThread().map(check,['http://'+ str(prx).strip() for prx in fhandle.read().split()]) 
-
     except Exception as e:
         print(f'{type(e).__name__} ERROR :: {e.args}')
 
