@@ -4,7 +4,7 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
 ### **Instructions:**
 - Dowload from git using
   ```console
-  git clone https://github.com/Node0o1/Proxy_Info_Checker.git
+  git clone https://github.com/Node0o1/Proxy-Info-Checker.git
   ```
   
 # Run
