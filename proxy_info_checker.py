@@ -35,7 +35,7 @@ def check(proxy):
         except: print(f'{chr(0x0a)}Error encountered with details for {proxy}. Skipping.')
         else: print(f'{chr(0x0a)}{proxy}{chr(0x0a)}{prox_details}')
 
-def main(in_file= None):
+def check_list(in_file= None):
     try:
         if(in_file == None):
             in_file=str(input("ENTER PROXY FILE PATH/NAME: "))
@@ -46,4 +46,4 @@ def main(in_file= None):
         print(f'{type(e).__name__} ERROR :: {e.args}')
 
 if __name__=="__main__":
-    main()
+    check_list()
