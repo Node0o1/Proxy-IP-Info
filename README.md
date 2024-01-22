@@ -9,27 +9,27 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
   
 #### Run
 - From CLI, run:
-  ```console
-  python proxy_info_checker.py
-  ```
+```console
+python proxy_info_checker.py
+```
   and you will be instructed to enter a filepath to your list of proxies that you would like to check
   
   or
   
 - From a python terminal, run:
   
-  ```python
-  #pass filepath as a parameter
-  import proxy_info_checker check
-  check.main('./path/to/file.txt')
-  ```
+```python
+#pass filepath as a parameter
+import proxy_info_checker check
+check.main('./path/to/file.txt')
+```
   or
   
-  ```python
-  #let python prompt you for a file
-  import proxy_info_checker as check
-  check.main()
-  ```
+```python
+#let python prompt you for a file
+import proxy_info_checker as check
+check.main()
+```
   
 ### **File Format:**
 ```
