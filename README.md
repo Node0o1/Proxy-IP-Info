@@ -42,7 +42,7 @@ Retrieve information pertaining to proxy servers
   P.chekc_list()
   ```
 
-  - Alternatively, you can check a single proxy:port using a Python terminal and  running:
+- Alternatively, you can check a single proxy:port using a Python terminal and  running:
   ```python
   #replace 127.0.0.1 with the proxy and port you are testing
   import proxy_info_checker as P
