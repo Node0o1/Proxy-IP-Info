@@ -16,7 +16,6 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
   
 #### Run
 - From CLI, run:
-- 
   ```console
   python proxy_info_checker.py
   ```
@@ -25,14 +24,13 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
   or
   
 - From a python terminal, run:
-    
   ```python
   #pass filepath as a parameter
   import proxy_info_checker check
   check.main('./path/to/file.txt')
   ```
-  or
   
+  or
   ```python
   #let python prompt you for a file
   import proxy_info_checker as check
