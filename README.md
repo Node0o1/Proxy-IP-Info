@@ -24,3 +24,11 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
   import proxy_info_checker as check
   check.main()
   ```
+
+  ### **File Format**
+  >127.0.0.1:1234
+  >127.0.0.1:1234
+  >127.0.0.1:1234
+  >127.0.0.1:1234
+  >127.0.0.1:1234
+  >...
