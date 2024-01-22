@@ -35,7 +35,7 @@ Retrieve information pertaining to proxy servers
   P.check_list('./path/to/file.txt')
   ```
   
-  - or
+  or
   ```python
   #let python prompt you for a file
   import proxy_info_checker as P
