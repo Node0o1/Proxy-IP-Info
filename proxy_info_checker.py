@@ -38,7 +38,7 @@ def check(proxy):
 def main(in_file= None):
     try:
         if(in_file == None):
-            in_file=str(input("ENTER PROXY FILE NAME: "))
+            in_file=str(input("ENTER PROXY FILE PATH/NAME: "))
         print(f'YOUR PUBLIC IP: {get_pub_ip()}')
         with open(in_file, mode='r') as fhandle:
             pThread().map(check,['http://'+ str(prx).strip() for prx in fhandle.read().split()]) 
