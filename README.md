@@ -3,12 +3,13 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
 
 ### **Instructions:**
 #### Dowload
+- Using CLI navigate to the directory in which you wish to install the application and run:
   ```console
   git clone https://github.com/Node0o1/Proxy-Info-Checker.git
   ```
 
 #### Setup
-- Using the CLI, navigate to the folder containing the requirements.txt file and install the file using Python's pip
+- Using the CLI, navigate to the folder containing the requirements.txt file and install the file using Python's pip:
   ```console
   python -m pip install requirements.txt
   ``` 
