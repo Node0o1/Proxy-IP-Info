@@ -39,7 +39,7 @@ Retrieve information pertaining to proxy servers
   ```python
   #let python prompt you for a file
   import proxy_info_checker as P
-  P.chekc_list()
+  P.check_list()
   ```
 
 - Alternatively, you can check a single proxy:port using a Python terminal and  running:
