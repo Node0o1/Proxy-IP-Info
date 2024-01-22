@@ -42,7 +42,7 @@ Retrieve information pertaining to proxy servers
   ```
 
   
-### **File Format:**
+## **File Format:**
 ```
 127.0.0.1:1234
 127.0.0.1:1234
