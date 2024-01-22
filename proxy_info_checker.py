@@ -17,28 +17,20 @@ BROWSER_HEADERS = [
     {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 OPR/76.0.4017.177"},
 ]
 
-def get_pub_ip():
-    try:
-        content = json.loads(requests.get('https://api.myip.com', timeout= TIMEOUT).text)
-    except:
-        return 'Public IP currently unavailable.'
-    else:
-        return content['ip']
+def get_pub_ip() -> str:
+    try: content = json.loads(requests.get('https://api.myip.com', timeout= TIMEOUT).text)
+    except: return 'Public IP currently unavailable.'
+    else: return content['ip']
 
 def check(proxy):
     rand_header = BROWSER_HEADERS[random.randint(0, len(BROWSER_HEADERS) -1 )]
     proxies = {'https': proxy}
-    try:
-        content = requests.get('https://api.myip.com', proxies= proxies, headers= rand_header, timeout= TIMEOUT, verify= True)
-    except Exception as e:
-        None
+    try: content = requests.get('https://api.myip.com', proxies= proxies, headers= rand_header, timeout= TIMEOUT, verify= True)
+    except: None
     else:
-        try:
-            prox_details = json.loads(content.text)
-        except:
-            print(f'{chr(0x0a)}Error encountered with details for {proxy}. Skipping.')
-        else:
-            print(f'{chr(0x0a)}{proxy}{chr(0x0a)}{prox_details}')
+        try: prox_details = json.loads(content.text)
+        except: print(f'{chr(0x0a)}Error encountered with details for {proxy}. Skipping.')
+        else: print(f'{chr(0x0a)}{proxy}{chr(0x0a)}{prox_details}')
 
 def main():
     try:
