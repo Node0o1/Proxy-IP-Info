@@ -31,15 +31,15 @@ Retrieve information pertaining to proxy servers
 - From a python terminal, run:
   ```python
   #pass filepath as a parameter
-  import proxy_ip_info
-  .check_proxies('./path/to/file.txt')
+  import proxy_ip_info as ipInfo
+  ipInfo.check_proxies('./path/to/file.txt')
   ```
   
   or
   ```python
   #let python prompt you for a file
-  import proxy_info_checker
-  proxy_ip_info.check_proxies()
+  import proxy_info_checker as ipInfo
+  ipInfo.check_proxies()
   ```
 
 
