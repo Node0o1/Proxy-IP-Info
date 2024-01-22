@@ -2,7 +2,10 @@
 NOTE: This program checks proxies for connectivity and if connected, returns the 
 public ip information pertaining to its connection. Use case check for anonimity.
 
-format- <ip:port> <127.0.0.1:1234>
+file-format: 
+127.0.0.1:1234
+127.0.0.1:1234
+127.0.0.1:1234
 '''
 import requests
 from multiprocessing import Pool as pThread
