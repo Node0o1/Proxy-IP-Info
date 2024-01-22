@@ -1,7 +1,13 @@
 # Proxy-Info-Checker
 Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.10:80`> delimited by newline characters then runs them through `myip.com`'s api. Return information is pertaining to proxies:ports which successfully connected to the api and returned json information containing the attributes of pulic IP and country. Output is printed to the terminal.
 
-### **Instructions**
+### **Instructions:**
+- Dowload from git using
+  ```console
+  git clone https://github.com/Node0o1/Proxy_Info_Checker.git
+  ```
+  
+# Run
 - From CLI, run:
   ```console
   python proxy_info_checker.py
@@ -25,7 +31,7 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
   check.main()
   ```
   
-### **File Format**
+### **File Format:**
 ```
 127.0.0.1:1234
 127.0.0.1:1234
