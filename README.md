@@ -26,6 +26,7 @@ Retrieve information pertaining to proxy servers
   ```
   You will be instructed to enter a filepath to your list of proxies
   
+  or
   
 - From a python terminal, run:
   ```python
