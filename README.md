@@ -10,7 +10,7 @@ Retrieve information pertaining to proxy servers
 #### Dowload
 - Using CLI navigate to the directory in which you wish to install the application and run:
   ```console
-  git clone https://github.com/Node0o1/Proxy-IP-Info.git
+  git clone https://github.com/Node0o1/Proxy-Info-Checker.git
   ```
 
 #### Setup
