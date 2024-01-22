@@ -35,9 +35,10 @@ def check(proxy):
         except: print(f'{chr(0x0a)}Error encountered with details for {proxy}. Skipping.')
         else: print(f'{chr(0x0a)}{proxy}{chr(0x0a)}{prox_details}')
 
-def main():
+def main(in_file= None):
     try:
-        in_file=str(input("ENTER PROXY FILE NAME: "))
+        if(in_file == None):
+            in_file=str(input("ENTER PROXY FILE NAME: "))
         print(f'YOUR PUBLIC IP: {get_pub_ip()}')
         with open(in_file, mode='r') as fhandle:
             pThread().map(check,['http://'+ str(prx).strip() for prx in fhandle.read().split()]) 
