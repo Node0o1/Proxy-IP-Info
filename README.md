@@ -7,7 +7,7 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
   git clone https://github.com/Node0o1/Proxy-Info-Checker.git
   ```
   
-# Run
+#### Run
 - From CLI, run:
   ```console
   python proxy_info_checker.py
