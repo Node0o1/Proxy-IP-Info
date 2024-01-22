@@ -10,7 +10,7 @@ Takes a file of proxy IP addresses and port numbers in the format of <`10.10.10.
 #### Run
 - From CLI, run:
   ```console
-  #you will be instructed to enter a filepath to your list of proxies
+  REM you will be instructed to enter a filepath to your list of proxies
   python proxy_info_checker.py
   ```
   
