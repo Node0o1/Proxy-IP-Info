@@ -1,4 +1,4 @@
-# Proxy-Info-Checker
+# Proxy-IP-Info
 Retrieve information pertaining to proxy servers
 #### *Type: Terminal Application*
 
@@ -10,7 +10,7 @@ Retrieve information pertaining to proxy servers
 #### Dowload
 - Using CLI navigate to the directory in which you wish to install the application and run:
   ```console
-  git clone https://github.com/Node0o1/Proxy-Info-Checker.git
+  git clone https://github.com/Node0o1/Proxy-IP-Info.git
   ```
 
 #### Setup
@@ -22,7 +22,7 @@ Retrieve information pertaining to proxy servers
 #### Run
 - From CLI, run:
   ```console
-  python proxy_info_checker.py
+  python proxy_ip_info.py
   ```
   You will be instructed to enter a filepath to your list of proxies
   
@@ -31,15 +31,15 @@ Retrieve information pertaining to proxy servers
 - From a python terminal, run:
   ```python
   #pass filepath as a parameter
-  import proxy_info_checker check
-  check.main('./path/to/file.txt')
+  import proxy_ip_info
+  .check_proxies('./path/to/file.txt')
   ```
   
   or
   ```python
   #let python prompt you for a file
-  import proxy_info_checker as check
-  check.main()
+  import proxy_info_checker
+  proxy_ip_info.check_proxies()
   ```
 
 
