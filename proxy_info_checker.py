@@ -46,5 +46,10 @@ def check_list(in_file= None):
     except Exception as e:
         print(f'{type(e).__name__} ERROR :: {e.args}')
 
+
 if __name__=="__main__":
-    check_list(sys.argv[0])
+    if(len(sys.argv) > 1):
+        infile = sys.argv[1]
+    else:
+        infile = None
+    check_list(infile)
