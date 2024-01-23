@@ -11,6 +11,7 @@ import requests
 from multiprocessing import Pool as pThread
 import json
 import random
+import sys
 
 TIMEOUT = 20
 BROWSER_HEADERS = [
@@ -46,4 +47,4 @@ def check_list(in_file= None):
         print(f'{type(e).__name__} ERROR :: {e.args}')
 
 if __name__=="__main__":
-    check_list()
+    check_list(sys.argv[0])
