@@ -22,9 +22,9 @@ Retrieve information pertaining to proxy servers
 #### Run
 - From CLI, run:
   ```console
-  python proxy_info_checker.py
+  python proxy_info_checker.py ./path/to/file.txt
   ```
-  You will be instructed to enter a filepath to your list of proxies
+  if the file is omitted, you will be instructed to enter a file.
   
   or
   
