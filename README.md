@@ -17,7 +17,12 @@ Retrieve information pertaining to proxy servers
 - Using the CLI, navigate to the folder containing the requirements.txt file and install the file using Python's pip:
   ```console
   python -m pip install -r requirements.txt
-  ``` 
+  ```
+  or
+  
+  ```console
+  python3 -m pip install -r requirements.txt
+  ```
   
 #### Run
 - From CLI, run:
