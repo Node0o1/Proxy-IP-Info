@@ -37,15 +37,14 @@ def check(proxy):
         else: print(f'{chr(0x0a)}{proxy}{chr(0x0a)}{prox_details}')
 
 def check_list(in_file= None):
+    if(in_file == None):
+        in_file=str(input("ENTER PROXY FILE PATH/NAME: "))
+    print(f'YOUR PUBLIC IP: {get_pub_ip()}')
     try:
-        if(in_file == None):
-            in_file=str(input("ENTER PROXY FILE PATH/NAME: "))
-        print(f'YOUR PUBLIC IP: {get_pub_ip()}')
-        try:
-            with open(in_file, mode='r') as fhandle:
-                pThread().map(check,['http://'+ str(prx).strip() for prx in fhandle.read().split()]) 
-        except FileExistsError as e:
-            print(f'{type(e).__name__} ERROR :: {e.args}')
+        with open(in_file, mode='r') as fhandle:
+            pThread().map(check,['http://'+ str(prx).strip() for prx in fhandle.read().split()]) 
+    except FileExistsError as e:
+        print(f'{type(e).__name__} ERROR :: {e.args}')
     except Exception as e:
         print(f'{type(e).__name__} ERROR :: {e.args}')
 
