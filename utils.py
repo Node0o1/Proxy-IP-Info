@@ -8,7 +8,7 @@ def get_pub_ip() -> str:
     except: return 'Public IP currently unavailable.'
     else: return content['ip']
 
-def check(proxy):
+def check(proxy) -> None:
     rand_header = BROWSER_HEADERS[random.randint(0, len(BROWSER_HEADERS)-1 )]
     proxies={'https': proxy}
     try: content=requests.get('https://api.myip.com', proxies=proxies,headers=rand_header, timeout= TIMEOUT, verify= True)
