@@ -4,7 +4,7 @@ import utils
 from globals import PROCESSES, MAX_TASK
 
 
-def check_list(in_file= None):
+def check_list(in_file= None) -> None:
     if(in_file == None):
         in_file=str(input("ENTER PROXY FILE PATH/NAME: "))
     print(f'YOUR PUBLIC IP: {utils.get_pub_ip()}')
