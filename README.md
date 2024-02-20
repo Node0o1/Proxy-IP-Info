@@ -33,25 +33,12 @@ Retrieve information pertaining to proxy servers
   
   or
   
-- From a python terminal, run:
-  ```python
-  #pass filepath as a parameter
-  import proxy_info_checker as P
-  P.check_list('./path/to/file.txt')
-  ```
-  
-  or
-  ```python
-  #let python prompt you for a file
-  import proxy_info_checker as P
-  P.check_list()
-  ```
 
 - Alternatively, you can check a single proxy:port using a Python terminal and  running:
   ```python
   #replace 127.0.0.1 with the proxy and port you are testing
-  import proxy_info_checker as P
-  P.check(127.0.0.1:1234)
+  import utils as proxy_tools
+  proxy_tools.check(127.0.0.1:1234)
   ```
 
 ## **File Format:**
